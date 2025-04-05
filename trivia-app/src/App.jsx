@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './App.css'
+import './styles/App.css'
 import { useEffect } from 'react'
 import Quiz from './components/Quiz'
 import Question from './components/Question'
