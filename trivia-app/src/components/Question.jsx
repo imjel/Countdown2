@@ -5,6 +5,7 @@
  */
 import React from 'react'
 import { useMemo } from 'react';
+import Button from '@mui/material/Button';
 
 const Question = ({ questionData, onSelection, questionIndex, isAnswered }) => {
 
@@ -25,13 +26,13 @@ const Question = ({ questionData, onSelection, questionIndex, isAnswered }) => {
 					// each list item (answer) is a button that triggers correct/incorrect answer logic
 					return (
 						<li key={index}>
-							<button
+							<Button
 								disabled={!!isAnswered} // don't allow user to click if they've answered
 								className={`answer-button ${isCorrect ? 'correct' : ''} ${isWrong ? 'wrong' : ''}`}
 								onClick={() => onSelection(questionIndex, answer, questionData.correctAnswer)}
 							>
 								{answer}
-							</button>
+							</Button>
 						</li>
 					)
 				})}
