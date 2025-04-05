@@ -8,7 +8,7 @@ import React from 'react'
 const Question = ({ questionData, onSelection }) => {
 
 	// saves incorrect and correct answers to an array, then shuffles them in random order
-	const answers = [questionData.incorrectAnswers, questionData.correctAnswer];
+	const answers = Object.values(questionData.incorrectAnswers).concat(questionData.correctAnswer);
 	const shuffledAnswers = answers.sort(() => Math.random() - 0.5);
 
 	return (
@@ -22,7 +22,7 @@ const Question = ({ questionData, onSelection }) => {
 						<button className='answer-button' onClick={() => onSelection(answer)}>{answer}
 						</button>
 					</li>
-				))};
+				))}
 			</ul>
 		</div>
 	)

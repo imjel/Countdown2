@@ -11,11 +11,11 @@ const Quiz = ({ questions }) => {
 	// keep running tally of correct/incorrect questions
 	const handleAnswer = (answer) => {
 		console.log('selected:', answer);
-
 	};
 
   return (
 	<div className="quiz-question">
+
 		{questions.map((ques, index) =>
 			<Question 
 				key={index}
