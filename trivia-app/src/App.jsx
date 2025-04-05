@@ -10,26 +10,26 @@ function App() {
 	const [questionData, setQuestionData] = useState([]);
 	const [isLoading, setIsLoading] = useState(true);
 
-	// question object
-	function Question({ questionData }) {
-		return (<>
-			<div>
-				<p>{questionData.question.text}</p>
-			</div>
-		</>
-		);
-	}
+	// // question object
+	// function Question({ questionData }) {
+	// 	return (<>
+	// 		<div>
+	// 			<p>{questionData.question.text}</p>
+	// 		</div>
+	// 	</>
+	// 	);
+	// }
 
-	function Answer ({ questionData }) {
-		return (<>
-			<div>
-				<ul>
-					<li>{questionData.correctAnswer}</li>
-				</ul>
-			</div>
-		</>
-		);
-	}
+	// function Answer ({ questionData }) {
+	// 	return (<>
+	// 		<div>
+	// 			<ul>
+	// 				<li>{questionData.correctAnswer}</li>
+	// 			</ul>
+	// 		</div>
+	// 	</>
+	// 	);
+	// }
 
 	// async/await api request 
 	useEffect(() => {
