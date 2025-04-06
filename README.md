@@ -1,2 +1,2 @@
 # Countdown2
-> repository for countdown 2.
+> repository for forge launch countdown 2.
